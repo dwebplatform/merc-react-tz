@@ -1,0 +1,261 @@
+#root {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #2443ff;
+  color: #fff;
+}
+.header__brand {
+  padding-left: 15px;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu-item {
+  padding: 8px;
+  font-family: sans-serif;
+}
+.header__menu-item {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  position: relative;
+  height: 300px;
+  padding-top: 56.25%;
+}
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 635px) and (max-width: 800px) {
+  .middle-section__items {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .planshet-card-container {
+    width: 300px;
+  }
+  .planshet-card-container-item {
+    width: 150px;
+  }
+  .card--bottom {
+    transform: translate3d(-40%, -90%, 0);
+  }
+  .card--right {
+    transform: translateX(25%);
+  }
+  .planshet-middle-section-item {
+    /* width: 250px; */
+    width: 31%;
+    min-width: 31%;
+    /* min-width: 260px; */
+  }
+}
+@media screen and (max-width: 635px) {
+  .m-section-top {
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+  }
+  .section-top__left-el {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    height: 90vh;
+  }
+
+  .m-main-header {
+    flex: 1;
+    text-align: center;
+  }
+  .m-header {
+    height: 10vh;
+  }
+  .m-main-header-btn-wrapper {
+    margin-bottom: 6vh;
+  }
+  .m-section-top__left_carousel {
+    display: block;
+    width: 100%;
+  }
+
+  .m-section-top__right {
+    display: none;
+  }
+
+  .m-middle-section__items {
+    width: 100%;
+    display: none;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  .m-middle-section__item {
+    width: 100%;
+  }
+  .product-item-right__description {
+    line-height: 1.5rem;
+  }
+
+  .m-form-section-container__ui-container {
+    display: none;
+  }
+  .m-form-section {
+    width: 100%;
+  }
+  .m-form__btn {
+    padding: 1rem;
+    letter-spacing: 2px;
+  }
+  .m-section-top__left-img-container {
+    display: block;
+    flex: 1;
+  }
+  .m-section-top__left-img-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

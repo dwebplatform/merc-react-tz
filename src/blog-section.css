@@ -1,0 +1,24 @@
+.middle-section {
+  padding: 20px;
+}
+
+.middle-section__header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.middle-section__items {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.middle-section-item {
+  width: 25%;
+  background: #e2e2e2;
+  border: transparent;
+  border-radius: 10px;
+}

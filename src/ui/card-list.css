@@ -1,0 +1,34 @@
+.card-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 40px;
+}
+.card {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card--left {
+  left: 0;
+  top: 0;
+  transform: translate3d(0, -10%, 0);
+}
+.card--right {
+  right: 0;
+  top: 0;
+
+  transform: translate3d(0, 0%, 0);
+}
+.card--bottom {
+  top: 100%;
+  left: 50%;
+  transform: translate3d(-50%, -90%, 0);
+}
+.card__image {
+  flex: 1;
+  object-fit: cover;
+}
