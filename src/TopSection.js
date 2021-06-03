@@ -1,6 +1,6 @@
 import "./top-section.css";
 import { SwiperComponent } from "./Swiper";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 export const TopSection = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
   useEffect(() => {

@@ -7,7 +7,7 @@ import { Footer } from "./Footer";
 import "./styles.css";
 export default function App() {
   return (
-    <>
+    <div>
       <Header />
       <main>
         <TopSection />
@@ -15,6 +15,6 @@ export default function App() {
         <FormSection />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }

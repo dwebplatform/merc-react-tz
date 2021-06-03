@@ -1,3 +1,4 @@
+import React from 'react'
 import classNames from "classnames";
 import "./blog-card.css";
 export const BlogCard = ({ className = "", src, title, description }) => {

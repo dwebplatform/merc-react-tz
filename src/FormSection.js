@@ -1,3 +1,4 @@
+import React from 'react'
 import "./form-section.css";
 import { useState } from "react";
 import { Section } from "./components/Section";

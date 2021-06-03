@@ -1,3 +1,4 @@
+import React from 'react';
 export const MenuItem = ({ children }) => {
   return (
     <li className="header__menu-item">
